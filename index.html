@@ -1,0 +1,78 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Argeebe: Color Guessing Game</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/slider.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+    <script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src='js/flat-ui.js'></script>
+    <script src="js/bootstrap-slider.js"></script>
+    <link rel='shortcut icon' type='image/png' href='images/favicon.ico' />
+</head>
+
+<body>
+    <div id='nameplate'>
+        <h1>Argeebe <small>Color Guessing Game</small></h1>
+    </div>
+    <div class='container-fluid'>
+        <div class='row'>
+            <div class='col-md-3' id='instructions'>
+                <h3>Instructions<br>
+                <small>1. Take a look at the color given to you in the swatch.<br>2. Input the red, green, and blue values you think make up the color.<br>3. Click on the swatch to see how you did. Scores range from 0 to 255, with 255 being the best.</small></h3>
+            </div>
+            <div class='col-md-6'>
+                <div class='swatch-wrapper'>
+                    <div class='swatch-color' id='random-swatch'>
+                        <div class='swatch-nametag nametag-random'>
+                            <p class='swatch-copy random-copy'><b>ARGEEBE</b>
+                                <br>15-3407
+                                <br>Click to Guess</p>
+                        </div>
+                    </div>
+                </div>
+                <div class='swatch-wrapper'>
+                    <div class='swatch-color' id='guess-swatch'>
+                        <div class='swatch-nametag nametag-guess'>
+                            <p class='swatch-copy guess-copy'><b>YOUR GUESS</b>
+                                <br>15-3407
+                                <br>Click to Play Again</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class='col-xs-1'>
+                <div class='color-wrapper color' id='color-r'>
+                    <div class='color-nametag'>
+                        <input id="slider-r" data-slider-id='rslider' type="text" data-slider-min="0" data-slider-max="255" data-slider-step="1" data-slider-value="255" data-slider-handle='square'/>
+                        <p class='color-copy' id='color-copy-r'>
+                            <b>R 255</b>
+                        </p>
+                    </div>
+                </div>
+                <div class='color-wrapper color' id='color-g'>
+                    <div class='color-nametag'>
+                        <input id="slider-g" data-slider-id='gslider' type="text" data-slider-min="0" data-slider-max="255" data-slider-step="1" data-slider-value="255" data-slider-handle="square" />
+                        <p class='color-copy' id='color-copy-g'>
+                            <b>G 255</b>
+                        </p>
+                    </div>
+                </div>
+                <div class='color-wrapper color' id='color-b'>
+                    <div class='color-nametag'>
+                        <input id="slider-b" data-slider-id='bslider' type="text" data-slider-min="0" data-slider-max="255" data-slider-step="1" data-slider-value="255" data-slider-handle="square" />
+                        <p class='color-copy' id='color-copy-b'>
+                            <b>B 255</b>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
