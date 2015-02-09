@@ -5,17 +5,18 @@
 
 input {
     position: relative;
-    width: 78px; 
+    width: 78px;
     left: 10px;
 }
 
 #nameplate {
     position: relative;
     left: 20px;
+    z-index: 0;
 }
 
 #instructions {
-    width: 300px;   
+    max-width: 300px;
 }
 
 .swatch-wrapper {
@@ -55,10 +56,6 @@ input {
     left: 10px;
     font-size: 25px;
     line-height: 27px;
-}
-
-#random-swatch {
-/*    background-color: rgb(186, 168, 193);   */
 }
 
 #random-swatch {
@@ -102,4 +99,29 @@ input {
 
 #color-b {
     background-color: rgb(0, 0, 255);
+}
+
+@media (max-width: 992px) {
+    /*    
+    changed nameplate for jquery media query purposes
+    */
+    
+    #nameplate {
+        z-index 1;
+    }
+    .swatch-color {
+        left: 50px;
+        width: 150px;
+        height: 150px;
+    }
+    .swatch-nametag {
+        top: 150px;
+        height: 64px;
+    }
+    .swatch-copy {
+        font-size: 14px;
+        line-height: 18px;
+        top: 5px;
+        left: 5px;
+    }
 }
